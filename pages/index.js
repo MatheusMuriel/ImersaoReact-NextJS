@@ -1,6 +1,8 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Widget from '../src/components/Widget'
+import styled from 'styled-components';
+import { useRouter } from 'next/router';
+import db from '../db.json';
+
+import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
@@ -18,26 +20,38 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <QuizBackground backgroundImage={db.bg} >
+    <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             Titulo
           </Widget.Header>
           <Widget.Content>
-            Pergunta
+            <form onSubmit={(event) => {
+              event.preventDefault();
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <input placeholder="Diz ai seu nome" />
+              <button type="submit">
+                Jogar [seuNome]
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Content>
-            Pergunta 2 
+            Pergunta 2
           </Widget.Content>
         </Widget>
-        <Footer></Footer>
+        <Footer />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/MatheusMuriel/ImersaoReact-NextJS" />
     </QuizBackground>
-  )
+  );
 }

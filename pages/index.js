@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import db from '../db.json';
 
@@ -22,7 +21,7 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            Titulo
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={(e) => {

@@ -35,6 +35,21 @@ export default function App({ Component, pageProps }) {
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+        <title>Quiz de Star Wars</title>
+        <meta name="title" content="Quiz de Star Wars" />
+        <meta name="description" content="Star Wars Quiz, teste seu nivel Jedi!" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://imersao-react-next-js.matheusmuriel.vercel.app/" />
+        <meta property="og:title" content="Quiz de Star Wars" />
+        <meta property="og:description" content="Star Wars Quiz, teste seu nivel Jedi!" />
+        <meta property="og:image" content="" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://imersao-react-next-js.matheusmuriel.vercel.app/" />
+        <meta property="twitter:title" content="Quiz de Star Wars" />
+        <meta property="twitter:description" content="Star Wars Quiz, teste seu nivel Jedi!" />
+        <meta property="twitter:image" content="" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />

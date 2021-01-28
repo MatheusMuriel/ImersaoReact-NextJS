@@ -26,9 +26,15 @@ Widget.Header = styled.header`
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
+  flex-direction: column;
   
   * {
     margin: 0;
+  }
+  
+  p {
+    margin-top: 8px;
+    font-size: 12px;
   }
 `;
 

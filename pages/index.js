@@ -22,6 +22,7 @@ export default function Home() {
         <Widget>
           <Widget.Header>
             <h1>{db.title}</h1>
+            <p>{db.description}</p>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={(e) => {
@@ -36,8 +37,6 @@ export default function Home() {
               />
               <Button type="submit" disabled={name.length === 0}>
                 Jogar
-                {' '}
-                {name}
               </Button>
             </form>
           </Widget.Content>

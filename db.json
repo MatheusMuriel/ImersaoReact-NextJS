@@ -1,28 +1,149 @@
 {
   "bg": "https://wallpaperaccess.com/full/2101913.jpg",
   "title": "Quiz de Star Wars",
-  "description": "Teste seus conhecimentos de Star Wars e vamos descobrir qual é o seu nivel Jedi. \n Que a força esteja com você!",
+  "description": "Teste seus conhecimentos de Star Wars e descubra qual é o seu nivel Jedi.\nQue a força esteja com você!",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://static.quizur.com/i/b/553b0a133f9665.08335114553b0a1303c501.54740602.jpg",
+      "title": "Em qual planeta Anakin luta contra Obi Wan Kenobi?",
+      "description": "Você se tornou aquilo que jurou destruir!",
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Dagobah",
+        "Mustafar",
+        "Corucant",
+        "Tattoine"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://static.quizur.com/i/b/553b0afe3f9227.05930030553b0afe2ed986.39803978.jpg",
+      "title": "Qual o nome do antigo mestre de Obi Wan?",
+      "description": "O mestre que teve Obi Wan como Padawan",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Qui Gon Jinn",
+         "Yoda",
+         "Mace Windu",
+         "Dookan"
+      ]
+    },
+    {
+      "image": "https://static.quizur.com/i/b/553b0bd063b8f5.11641149553b0bd04c69e7.72887039.jpg",
+      "title": "Qual é a cor do sabre de luz dos Sith?",
+      "description": "Sabre de luz feito com um cristal kyber corrompido",
+      "answer": 3,
+      "alternatives": [
+         "Azul",
+         "Verde",
+         "Roxo",
+         "Vermelho"
+      ]
+    },
+    {
+      "image": "https://static.quizur.com/i/b/553b0c0e059e53.19392089553b0c0deb2e66.68937017.jpg",
+      "title": "O que Luke e Léia são?",
+      "description": "Além de personagens muito bons kkkk",
+      "answer": 0,
+      "alternatives": [
+         "Irmãos",
+         "Amigos",
+         "Namorados",
+         "Primos"
+      ]
+    },
+    {
+      "image": "https://static.quizur.com/i/b/553b0cea2f1839.16234711553b0cea1f9d31.72841181.png",
+      "title": "Quantos braços tinha o General Grievous?",
+      "description": "Muito bom pra malabarismo",
+      "answer": 2,
+      "alternatives": [
+         "8 Braços",
+         "2 Braços",
+         "4 Braços",
+         "6 Braços"
+      ]
+    },
+    {
+      "image": "https://static.quizur.com/i/b/553b0d20607be5.77120654553b0d203be767.52155341.jpg",
+      "title": "Qual o nome da mãe biologica de Luke?",
+      "description": "Luke, eu sou sua mãe!",
+      "answer": 2,
+      "alternatives": [
+         "Cordé",
+         "Shmi",
+         "Padmé",
+         "Satine"
+      ]
+    },
+    {
+      "image": "https://static.quizur.com/i/b/553b0e70c96770.69643797553b0e70bbbd54.41769745.jpg",
+      "title": "Qual é a frase mais famosa que Darth Vader disse a Luke?",
+      "description": "Cuidado com a falsa memoria aqui em!",
+      "answer": 1,
+      "alternatives": [
+         "Não Luke, eu sou seu pai",
+         "Não, eu sou seu pai",
+         "Luke, eu sou seu pai"
+      ]
+    },
+    {
+      "image": "https://static.quizur.com/i/b/553b0edc90c4b4.99737015553b0edc8314b6.28062927.jpg",
+      "title": "Qual era o trabalho de Boba Fett?",
+      "description": "Além de ser origem de DNA para os clone",
+      "answer": 0,
+      "alternatives": [
+         "Caçador de Recompensas",
+         "Mercador",
+         "Jedi",
+         "General"
+      ]
+    },
+    {
+      "image": "https://static.quizur.com/i/b/553b0fe12a7d21.06631710553b0fe11d2453.00112167.jpg",
+      "title": "Qual é o pai de Darth Vader?",
+      "description": "Quem poderia dizer: 'Luke, eu sou seu vó'?",
+      "answer": 3,
+      "alternatives": [
+         "Dookan",
+         "Palpatine",
+         "Não se sabe",
+         "Ele nasceu da força"
+      ]
+    },
+    {
+      "image": "https://starwarsblog.starwars.com/wp-content/uploads/2020/04/jounrey-of-anakin-skywalker-in-clone-wars_TALL.jpg",
+      "title": "Quem foi Padawan de Akanin Skywalker?",
+      "description": "Essa é pra quem viu Clone Wars",
+      "answer": 2,
+      "alternatives": [
+         "Luke",
+         "Ezra",
+         "Ahsoka Tano",
+         "Kanan"
+      ]
+    },
+    {
+      "image": "https://i.redd.it/iz6geardd2u21.jpg",
+      "title": "Quem tinha um sabre de luz que também funcionava como Blaster?",
+      "description": "",
+      "answer": 3,
+      "alternatives": [
+         "Yoda",
+         "Ahsoka Tano",
+         "Anakin",
+         "Ezra"
+      ]
+    },
+    {
+      "image": "https://uploads.jovemnerd.com.br/wp-content/uploads/2020/02/george-lucas-sabre-roxo.png",
+      "title": "Quem era o unico do conselho Jedi que tinha um sabre de luz roxo?",
+      "description": "Além de dominar todas as 7 formas de combate com sabre de luz",
+      "answer": 2,
+      "alternatives": [
+         "Yoda",
+         "Plo Koon",
+         "Mace Windu",
+         "Kit Fisto"
       ]
     }
   ],

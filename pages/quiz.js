@@ -10,6 +10,26 @@ import Button from '../src/components/Button';
 import Loading from '../src/components/Loading';
 
 function ResultWidget({ results }) {
+  const pontos = results.filter((x) => x).length;
+  function handlePontos() {
+    const totalQuestoes = db.questions.length;
+
+    if (pontos <= (totalQuestoes / 4) * 1) {
+      return db.niveis[0];
+    }
+    if (pontos <= (totalQuestoes / 4) * 2) {
+      return db.niveis[1];
+    }
+    if (pontos <= (totalQuestoes / 4) * 3) {
+      return db.niveis[2];
+    }
+    if (pontos <= (totalQuestoes / 4) * 4) {
+      return db.niveis[3];
+    }
+    return null;
+  }
+  const nivel = handlePontos();
+
   return (
     <Widget>
       <Widget.Header>
@@ -17,19 +37,23 @@ function ResultWidget({ results }) {
       </Widget.Header>
 
       <Widget.Content>
-        <p>
+        <h1>
           {'Você acertou '}
-          {results.filter((x) => x).length}
+          {pontos}
           {' perguntas'}
-        </p>
-        <ul>
-          {results.map((result) => (
-            <li key={`result__${result}`}>
-              #01 Resultado:
-              {result === true ? 'Acertou' : 'Errou'}
-            </li>
-          ))}
-        </ul>
+        </h1>
+        <h2>{`Seu nivel é: ${nivel.nivel}`}</h2>
+        <img
+          alt="Nivel"
+          style={{
+            marginTop: '16px',
+            width: '100%',
+            height: '150px',
+            objectFit: 'cover',
+          }}
+          src={nivel.imagem}
+        />
+        <p>{nivel.descricao}</p>
       </Widget.Content>
     </Widget>
   );

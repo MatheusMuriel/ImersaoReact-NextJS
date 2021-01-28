@@ -150,6 +150,28 @@
   "external": [
     ""
   ],
+  "niveis": [
+    {
+      "nivel": "Padawan",
+      "descricao": "Você ainda tem muito oq aprender jovem padawan...",
+      "imagem": "https://i0.wp.com/cientistabeta.com.br/wp-content/uploads/2016/01/2.2.gif"
+    },
+    {
+      "nivel": "Cavalheiro Jedi",
+      "descricao": "Já não é um aprendiz, mas ainda a muito oq aprender.",
+      "imagem": "https://media.moddb.com/images/downloads/1/35/34686/v7cjyb.gif"
+    },
+    {
+      "nivel": "Mestre Jedi",
+      "descricao": "Você é muito experiente na força! Mas ainda tem alguns truques pra aprender.",
+      "imagem": "https://media1.tenor.com/images/b071c05c598347af479e37924a10a34f/tenor.gif?itemid=16358958"
+    },
+    {
+      "nivel": "Grão Mestre Jedi",
+      "descricao": "Você é a pessoa viva mais experiente na força! Seu dever é guiar os mais jovens.",
+      "imagem": "https://giffiles.alphacoders.com/219/2195.gif"
+    }
+  ],
   "theme": {
     "colors": {
       "primary": "#0d47a1",

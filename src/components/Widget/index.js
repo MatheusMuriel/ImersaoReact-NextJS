@@ -35,6 +35,7 @@ Widget.Header = styled.header`
   p {
     margin-top: 8px;
     font-size: 12px;
+    white-space: pre-wrap;
   }
 `;
 

@@ -12,6 +12,10 @@ const AlternativesForm = styled.form`
         background-color: ${({ theme }) => theme.colors.wrong};
       }
     }
+    &[data-status="SUCCESS"] {
+      background-color: ${({ theme }) => theme.colors.success};
+    }  
+    
     &:focus {
       opacity: 1;
     } 

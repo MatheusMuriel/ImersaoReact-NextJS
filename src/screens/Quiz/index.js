@@ -111,8 +111,10 @@ function QuestionWidget({
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
             const alternativeId = `alternative__${alternativeIndex}`;
-            const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
             const isSelected = selectedAlternative === alternativeIndex;
+            const alternativeStatusAux = (isCorrect && isSelected) ? 'SUCCESS' : 'ERROR';
+            const alternativeStatus = isQuestionSubmited ? alternativeStatusAux : '';
+            const isCorrectButNotSelected = isQuestionSubmited && (alternativeIndex === question.answer) ? 'SUCCESS' : '';
             alternatives.push(alternativeId);
             return (
               <Widget.Topic
@@ -121,7 +123,7 @@ function QuestionWidget({
                 key={alternativeId}
                 htmlFor={alternativeId}
                 data-selected={isSelected}
-                data-status={isQuestionSubmited && alternativeStatus}
+                data-status={isCorrectButNotSelected || alternativeStatus}
               >
                 <input
                   style={{ display: 'none' }}

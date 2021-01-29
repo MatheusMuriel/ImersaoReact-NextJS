@@ -54,6 +54,7 @@ function QuestionWidget({
   const isCorrect = selectedAlternative === question.answer;
   const [isQuestionSubmited, setIsQuestionSubmited] = React.useState(false);
   const hasAlternativeSelected = selectedAlternative !== undefined;
+  const alternatives = [];
 
   return (
     <Widget>
@@ -101,6 +102,10 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               addResult(isCorrect);
+
+              alternatives.forEach((alt) => {
+                document.getElementById(alt).checked = false;
+              });
             }, 3 * 1000);
           }}
         >
@@ -108,15 +113,18 @@ function QuestionWidget({
             const alternativeId = `alternative__${alternativeIndex}`;
             const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
             const isSelected = selectedAlternative === alternativeIndex;
+            alternatives.push(alternativeId);
             return (
               <Widget.Topic
                 as="label"
+                checked={false}
                 key={alternativeId}
                 htmlFor={alternativeId}
                 data-selected={isSelected}
                 data-status={isQuestionSubmited && alternativeStatus}
               >
                 <input
+                  style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
                   onChange={() => setSelectedAlternative(alternativeIndex)}

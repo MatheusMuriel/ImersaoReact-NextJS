@@ -43,13 +43,13 @@ export default function App({ Component, pageProps }) {
         <meta property="og:url" content="https://imersao-react-next-js.matheusmuriel.vercel.app/" />
         <meta property="og:title" content="Quiz de Star Wars" />
         <meta property="og:description" content="Star Wars Quiz, teste seu nivel Jedi!" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="https://imersao-react-next-js.matheusmuriel.vercel.app/" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://imersao-react-next-js.matheusmuriel.vercel.app/" />
         <meta property="twitter:title" content="Quiz de Star Wars" />
         <meta property="twitter:description" content="Star Wars Quiz, teste seu nivel Jedi!" />
-        <meta property="twitter:image" content="" />
+        <meta property="twitter:image" content="https://imersao-react-next-js.matheusmuriel.vercel.app/" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />

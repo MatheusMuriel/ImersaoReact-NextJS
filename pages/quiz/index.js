@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
-import Loading from '../src/components/Loading';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import Button from '../../src/components/Button';
+import Loading from '../../src/components/Loading';
 
 function ResultWidget({ results }) {
   const pontos = results.filter((x) => x).length;

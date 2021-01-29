@@ -36,6 +36,7 @@ export default function App({ Component, pageProps }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
         <title>Quiz de Star Wars</title>
+        <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/space-war-5/512/lightsaber-sword-weapon-space-war-512.png" />
         <meta name="title" content="Quiz de Star Wars" />
         <meta name="description" content="Star Wars Quiz, teste seu nivel Jedi!" />
 

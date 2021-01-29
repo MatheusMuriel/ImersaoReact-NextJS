@@ -6,6 +6,20 @@ const FooterWrapper = styled.footer`
   display: flex;
   align-items: center;
   border-radius: 4px; 
+  position: absolute;
+  border: 0;
+  right: 16px;
+  z-index: 20;
+  bottom: 16px;
+  max-width: 350px;
+
+  @media screen and (max-width: 500px) {
+    right: 0;
+    z-index: auto;
+    bottom: auto;
+    max-width: auto;
+  }
+
   img {
     width: 58px;
     margin-right: 23px;

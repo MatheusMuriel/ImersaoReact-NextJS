@@ -1,6 +1,4 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
-// import db from '../../../db.json';
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../components/QuizBackground';
@@ -8,27 +6,10 @@ import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import Loading from '../../components/Loading';
+import BackLinkArrow from '../../components/BackLinkArrow';
 
 function ResultWidget({ results }) {
   const pontos = results.filter((x) => x).length;
-  function handlePontos() {
-    const totalQuestoes = db.questions.length;
-
-    if (pontos <= (totalQuestoes / 4) * 1) {
-      return db.niveis[0];
-    }
-    if (pontos <= (totalQuestoes / 4) * 2) {
-      return db.niveis[1];
-    }
-    if (pontos <= (totalQuestoes / 4) * 3) {
-      return db.niveis[2];
-    }
-    if (pontos <= (totalQuestoes / 4) * 4) {
-      return db.niveis[3];
-    }
-    return null;
-  }
-  const nivel = handlePontos();
 
   return (
     <Widget>
@@ -42,18 +23,6 @@ function ResultWidget({ results }) {
           {pontos}
           {' perguntas'}
         </h1>
-        <h2>{`Seu nivel é: ${nivel.nivel}`}</h2>
-        <img
-          alt="Nivel"
-          style={{
-            marginTop: '16px',
-            width: '100%',
-            height: '150px',
-            objectFit: 'cover',
-          }}
-          src={nivel.imagem}
-        />
-        <p>{nivel.descricao}</p>
       </Widget.Content>
     </Widget>
   );
@@ -89,9 +58,21 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        <h3>
-          {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
-        </h3>
+        <div
+          style={{
+            flexDirection: 'row',
+            display: 'flex',
+            flex: '1',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            alignSelf: 'baseline',
+          }}
+        >
+          <BackLinkArrow href="/" />
+          <h3>
+            {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
+          </h3>
+        </div>
       </Widget.Header>
 
       <img
